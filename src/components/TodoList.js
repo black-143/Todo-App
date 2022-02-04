@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import './TodoList.css'
 import { MdDelete } from "react-icons/md";
 import { GrAdd } from "react-icons/gr";
 
@@ -32,16 +33,16 @@ const deleteTask=(itemVal)=>{
     <div className="Todo">
     <p>Let's-Start-Todo-Application</p>
  
-      <br/>
+      
       <br/>
       
                 <input type="text" onChange={changeHandler} placeholder="add-task-here" 
                 value={inputtext}/>
                
-            <button className="todo-button" onClick={addTask}><GrAdd size={25} color="black"/></button>
-            <br/>
-            <br/><br/><br/><br/><br/>
+            <button className="todo-button" onClick={addTask} data-testid="button"><GrAdd size={25} color="black"/></button>
+            <br/><br/>
             <div>
+
               <p>Enter-Tasks-todo</p>
               </div>
                 
